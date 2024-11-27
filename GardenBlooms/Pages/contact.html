@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - W.O.Bren Garden Shop</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="../Styles/main.css" rel="stylesheet">
+    
+</head>
+<body>
+     <!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="../Images/Logo.jpg" alt="W.O.Bren Garden Shop Logo" style="height: 65px; width: 150px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <i class="fas fa-bars" style="color: white;"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="plants.html">Garden Plants</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container position-relative">
+            <!-- Decorative Elements -->
+            <svg class="floating-flower" style="top: 10%; left: 5%; animation: float 6s infinite;" width="100" height="100" viewBox="0 0 100 100">
+                <path d="M50 0 C60 40 90 50 50 100 C10 50 40 40 50 0" fill="var(--primary-brown)"/>
+            </svg>
+            <svg class="floating-flower" style="top: 60%; right: 5%; animation: float 8s infinite;" width="80" height="80" viewBox="0 0 100 100">
+                <path d="M50 0 C60 40 90 50 50 100 C10 50 40 40 50 0" fill="var(--secondary-gold)"/>
+            </svg>
+
+            <h2 class="text-center section-title" data-aos="fade-up">Contact Us</h2>
+            
+            <div class="row g-4">
+       <!-- Contact Form -->
+<div class="col-lg-7" data-aos="fade-right">
+    <div class="contact-form">
+        <form id="contactForm">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        <label for="name">Your Name</label>
+                        <div class="error-message" id="nameError">Please enter your name</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        <label for="email">Your Email</label>
+                        <div class="error-message" id="emailError">Please enter a valid email</div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                        <label for="subject">Subject</label>
+                        <div class="error-message" id="subjectError">Please enter a subject</div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-floating">
+                        <textarea class="form-control" id="message" placeholder="Message" style="height: 150px" required></textarea>
+                        <label for="message">Message</label>
+                        <div class="error-message" id="messageError">Please enter your message</div>
+                    </div>
+                </div>
+                
+                <div class="col-12">
+                    <div class="form-floating">
+                        <select class="form-control" id="issueType" required>
+                            <option value="" disabled selected>Select an Issue</option>
+                            <option value="wrong_order">Wrong Order</option>
+                            <option value="query_product">Query About Product</option>
+                            <option value="delivery_issue">Delivery Issue</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label for="issueType">Issue Type</label>
+                        <div class="error-message" id="issueError">Please select an issue type</div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-submit">
+                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                    </button>
+                </div>
+            </div>
+        </form>
+        <div id="formFeedback" class="form-feedback"></div>
+    </div>
+</div>
+
+
+                <!-- Contact Information -->
+                <div class="col-lg-5" data-aos="fade-left">
+                    <div class="contact-info-card">
+                        <div class="contact-info-item mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h4>Our Location</h4>
+                            <p>123 Garden Street, Nature Valley<br>Green City, GC 12345</p>
+                        </div>
+                        <div class="contact-info-item mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                        </div>
+                        <div class="contact-info-item mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h4>Email</h4>
+                            <p>info@wobren.com<br>support@wobren.com</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4>Opening Hours</h4>
+                            <p>Monday - Saturday: 9:00 AM - 6:00 PM<br>Sunday: 10:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+        <div class="container py-5">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-heading">The 
+                        garden Shop
+                    </h5>
+                    <div class="company-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> contact@company.com</p>
+                    </div>
+                </div>
+    
+                <!-- Quick Links -->
+            <div class="col-lg-4 mb-4">
+                <h5 class="footer-heading">Quick Links</h5>
+                <ul class="footer-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="plants.html">Garden plants</a></li>
+                   
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+           <!-- Social Media -->
+<div class="col-lg-4 mb-4">
+    <h5 class="footer-heading">Connect With Us</h5>
+    <div class="social-links">
+        <a href="https://www.facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+</div>
+
+    
+        <!-- Copyright -->
+        <div class="copyright">
+            <div class="container">
+                <p class="text-center mb-0">
+                    © 2024 The Garden Shop. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../Scripts/app.js"></script>
+    <script>
+       
+    </script>
+</body>
+</html>
